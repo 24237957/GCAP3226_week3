@@ -1,4 +1,4 @@
-# GCAP3226 — Week 3 (MSW survey · regression)
+# Week 3 (MSW survey · regression)
 
 Hong Kong municipal solid waste (MSW) charging survey data. Practice **association** language, charts, and linear regression in **GitHub Codespaces**, with short **Input → Process → Output** AI prompts.
 
