@@ -1,19 +1,21 @@
 {
-  "name": "MATH7810-labs",
+  "name": "GCAP3226",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "features": {},
-  "postCreateCommand": "pip install -r requirements.txt",
+  "postCreateCommand": "python -m pip install --upgrade pip && python -m pip install -r requirements.txt",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-toolsai.jupyter"
-      ]
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "notebook.output.textLineLimit": 100
+      }
     }
   },
-  "hostRequirements": {
-    "cpus": 2,
-    "memory": "4gb",
-    "storage": "32gb"
-  }
+  "remoteUser": "vscode"
 }
